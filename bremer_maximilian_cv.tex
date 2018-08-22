@@ -1,0 +1,203 @@
+\documentclass[margin,line]{res}
+
+\usepackage{amsmath,latexsym}
+\usepackage{multicol}
+
+\oddsidemargin -0.5in
+\evensidemargin -0.5in %-.5in
+\topmargin -0.02 in
+\textwidth=6in
+\addtolength{\textheight}{0.5in}
+
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\ddagger$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+%% Usage
+% Names, ``Title'', Journal, Month Year, doi.
+\newcommand{\article}[5]{%
+#1,``#2'',{\it #3},#4,#5.%
+}
+
+%% Usage
+% Names, ``Title'',Conference, City, Publisher, {Month Day, Year}, pages.
+\newcommand{\inproceeding}[7]{%
+#1,``#2'',{\it #3},#4,#5,#6,#7.%
+}
+
+%% Usage
+% Names, ``Title'',Conference, {Month Day, Year}.
+\newcommand{\talk}[4]{%
+#1,``#2'',{\it #3}, #4.%
+}
+
+\begin{document} 
+\name{Maximilian H. Bremer \vspace*{.1in}}
+
+\begin{resume}
+
+\section{\sc Contact Information} 
+%vspace{.05in}
+\begin{tabular}{@{}p{3.25in}p{4in}}
+201 East 24th St, Stop C0200 & { Cell:} (214) 862-7370 \\
+Austin, TX 78712-1229 USA & {E-mail:} {\tt max@ices.utexas.edu}
+\end{tabular} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Education} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{University of Texas at Austin}, \\
+\textbf{Institute for Computational Engineering and Sciences} \\ 
+\vspace*{-.1in} 
+
+\begin{list1} 
+\item[] Ph.D. Candidate, Computational Science, Engineering, and Mathematics.
+  ($4^{\text{th}}$ year) 
+\item[] M.Sc., Computational Science, Engineering, and Mathematics, May 2018.
+\item[] Advisor: Clint Dawson
+\end{list1} 
+
+\textbf{University of Cambridge}, \\
+\vspace*{-.1in} 
+
+\begin{list1} 
+\item[] M.A.St., Part III Pure Mathematics, June 2015
+\item[] Emphasis: Partial Differential Equations / Analysis
+\end{list1} 
+
+\textbf{The University of Texas at Austin} \\
+
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.Sc., Aerospace Engineering, May 2014.
+\item[] B.Sc., Applied Mathematics, May 2014. 
+\item[] Senior Thesis: \textit{A Discontinuous Galerkin Local Timestepping Scheme for the Prediction of Hurricane Storm Surge}
+\end{list1} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Research Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textit{Research Interests}
+\vspace{0.05in}
+\begin{list2}
+\item Developing an asynchronous HPX-based implementation of a finite element model for hurricane storm surge simulation, 	(Principal Investigator: Clint Dawson).
+\item Using reinforcement learning to derive load balancing strategies for hurricane storm surge modeling, 	(Principal Investigator: Clint Dawson).
+
+%\item Developing load balancing strategies for hurricane storm surge simulations with asynchronous run-times,
+%	(Principal Investigators: Cy Chan, John Bachan).
+\end{list2}
+
+\textbf{Lawrence Berkeley National Lab} \hfill June 2016--August 2016\\
+\textit{Computer Architecture Group} 
+\vspace{0.05in}
+\begin{list2}
+\item[] Examined load balancing strategies for asynchronous execution models of hurricane storm surge simulations. Developed and validated a simulator of the application code upon which specific strategies were then examined.
+\end{list2} 
+
+\textbf{German Aerospace Center} \hfill June 2014--September 2014\\
+\textit{Center for Computer Applications in Aerospace Science and Engineering}
+\vspace{0.05in}
+\begin{list2}
+\item[] Analyzed the effects of element-type on discontinuous Galerkin solutions for aerospace applications. Implemented I/O features for finite element code using multigrid to solve steady Navier-Stokes with some turbulence model (e.g. $k- \omega$ or SA-neg). Validated data shown on NASA Langley's Turbulence Modeling Resource.
+\end{list2}
+
+\textbf{ Max Planck Institute} \hfill May 2012--July 2012\\
+\textit{Computational Methods in Systems and Controls Theory Group}
+\vspace{0.05in}
+\begin{list2}
+\item[] Developed algorithms for computation of generalized pseudospectra, exhibiting acceleration factors of over 200 compared to na\"ive implementations. Applications included analyzing robustness of the Brazilian power network using $\mathcal{H}_{\infty}$ norms.
+\end{list2} 
+
+\textbf{The University of Texas at Austin} \hfill June 2013--July 2015\\
+\textit{Computational Hydraulics Group}
+\vspace{0.05in}
+\begin{list2}
+\item[] Used Runge-Kutta Discontinuous Galerkin methods to simulate the effects of rainfall-induced flooding through storm sewer systems using the shallow water equations and kinematic wave equation to improve the accuracy of hurricane storm surge predictions. Included independent study of LeVeque's \textit{Numerical Methods for Conservation Laws}.
+\end{list2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Publications}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textit{Journal Articles}
+\vspace{0.05in}
+\begin{list2} 
+%\item[1.] 
+\end{list2} 
+\textit{Conference Papers}
+\vspace{0.05in}
+
+\textit{Presentations/Talks}
+\vspace{0.05in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Honors and \\ Awards}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textit{Honors and Awards} 
+\vspace{0.05in}
+\begin{list2}
+\item[] Department of Energy Computational Science Graduate Fellowship (2015)
+\item[] Harrington Fellowship (2015)
+\item[] Top Scholar-/Leader Award (2014)
+\item[] Graham F. Carey Scholarship in Computational Science (2013)
+\end{list2} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{\sc Internships and Positions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\textit{Professional and Honorary Societies}
+%\vspace{0.05in}
+%\begin{list2} 
+%\item[] Society for Industrial and Applied Mathematics (SIAM)
+%\end{list2} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Computer \\ Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textit{Languages}
+\vspace{0.05in}
+\begin{list2} 
+\item C++, Python, FORTRAN, MatLab, \LaTeX
+\item MPI, TensorFlow
+\end{list2} 
+%\textit{Areas of Exposure}
+%\vspace{0.05in}
+%\begin{list2} 
+%\item Computer Networks, Data Mining, Systems \& Hardware, Data
+% Structures. 
+
+% Computational Experimentation, Systems \& Hardware
+%\end{list2} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{\sc Other Skills} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\textit{Languages} 
+%\vspace{0.05in}
+%\begin{list2} 
+%\item English, German
+%\end{list2} 
+%\section{\sc *References upon} {\sc request}
+\end{resume} 
+\end{document} 
