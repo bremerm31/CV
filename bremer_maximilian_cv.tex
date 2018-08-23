@@ -28,19 +28,26 @@
 %% Usage
 % Names, ``Title'', Journal, Month Year, doi.
 \newcommand{\article}[5]{%
-#1,``#2'',{\it #3},#4,#5.%
+#1, ``#2'', {\it #3}, #4, #5.%
 }
+
+\newcommand{\submitted}[4]{%
+#1, ``#2'', {\it Submitted to #3}, #4.%
+}
+%\newcommand{\submitted}[3]{%
+%#1,``#2'',{\it Submitted},#3.%
+%}
 
 %% Usage
 % Names, ``Title'',Conference, City, Publisher, {Month Day, Year}, pages.
 \newcommand{\inproceeding}[7]{%
-#1,``#2'',{\it #3},#4,#5,#6,#7.%
+#1, ``#2'', {\it #3}, #4, #5, #6, #7.%
 }
 
 %% Usage
 % Names, ``Title'',Conference, {Month Day, Year}.
 \newcommand{\talk}[4]{%
-#1,``#2'',{\it #3}, #4.%
+#1,``#2'', {\it #3}, #4.%
 }
 
 \begin{document} 
@@ -66,9 +73,9 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@ices.utexas.edu}
 
 \begin{list1} 
 \item[] Ph.D. Candidate, Computational Science, Engineering, and Mathematics.
-  ($4^{\text{th}}$ year) 
 \item[] M.Sc., Computational Science, Engineering, and Mathematics, May 2018.
 \item[] Advisor: Clint Dawson
+\item[] Expected Graduation Date: Summer 2020
 \end{list1} 
 
 \textbf{University of Cambridge}, \\
@@ -85,7 +92,7 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@ices.utexas.edu}
 \begin{list1}
 \item[] B.Sc., Aerospace Engineering, May 2014.
 \item[] B.Sc., Applied Mathematics, May 2014. 
-\item[] Senior Thesis: \textit{A Discontinuous Galerkin Local Timestepping Scheme for the Prediction of Hurricane Storm Surge}
+%\item[] Senior Thesis: \textit{A Discontinuous Galerkin Local Timestepping Scheme for the Prediction of Hurricane Storm Surge}
 \end{list1} 
 
 
@@ -102,60 +109,76 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@ices.utexas.edu}
 %	(Principal Investigators: Cy Chan, John Bachan).
 \end{list2}
 
-\textbf{Lawrence Berkeley National Lab} \hfill June 2016--August 2016\\
-\textit{Computer Architecture Group} 
-\vspace{0.05in}
-\begin{list2}
-\item[] Examined load balancing strategies for asynchronous execution models of hurricane storm surge simulations. Developed and validated a simulator of the application code upon which specific strategies were then examined.
-\end{list2} 
+%\textbf{Lawrence Berkeley National Lab} \hfill June 2016--August 2016\\
+%\textit{Computer Architecture Group} 
+%\vspace{0.05in}
+%\begin{list2}
+%\item[] Examined load balancing strategies for asynchronous execution models of hurricane storm surge simulations. Developed and validated a simulator of the application code upon which specific strategies were then examined.
+%\end{list2} 
 
-\textbf{German Aerospace Center} \hfill June 2014--September 2014\\
-\textit{Center for Computer Applications in Aerospace Science and Engineering}
-\vspace{0.05in}
-\begin{list2}
-\item[] Analyzed the effects of element-type on discontinuous Galerkin solutions for aerospace applications. Implemented I/O features for finite element code using multigrid to solve steady Navier-Stokes with some turbulence model (e.g. $k- \omega$ or SA-neg). Validated data shown on NASA Langley's Turbulence Modeling Resource.
-\end{list2}
+%\textbf{German Aerospace Center} \hfill June 2014--September 2014\\
+%\textit{Center for Computer Applications in Aerospace Science and Engineering}
+%\vspace{0.05in}
+%\begin{list2}
+%\item[] Analyzed the effects of element-type on discontinuous Galerkin solutions for aerospace applications. Implemented I/O features for finite element code using multigrid to solve steady Navier-Stokes with some turbulence model (e.g. $k- \omega$ or SA-neg). Validated data shown on NASA Langley's Turbulence Modeling Resource.
+%\end{list2}
 
-\textbf{ Max Planck Institute} \hfill May 2012--July 2012\\
-\textit{Computational Methods in Systems and Controls Theory Group}
-\vspace{0.05in}
-\begin{list2}
-\item[] Developed algorithms for computation of generalized pseudospectra, exhibiting acceleration factors of over 200 compared to na\"ive implementations. Applications included analyzing robustness of the Brazilian power network using $\mathcal{H}_{\infty}$ norms.
-\end{list2} 
+%\textbf{ Max Planck Institute} \hfill May 2012--July 2012\\
+%\textit{Computational Methods in Systems and Controls Theory Group}
+%\vspace{0.05in}
+%\begin{list2}
+%\item[] Developed algorithms for computation of generalized pseudospectra, exhibiting acceleration factors of over 200 compared to na\"ive implementations. Applications included analyzing robustness of the Brazilian power network using $\mathcal{H}_{\infty}$ norms.
+%\end{list2} 
 
-\textbf{The University of Texas at Austin} \hfill June 2013--July 2015\\
-\textit{Computational Hydraulics Group}
-\vspace{0.05in}
-\begin{list2}
-\item[] Used Runge-Kutta Discontinuous Galerkin methods to simulate the effects of rainfall-induced flooding through storm sewer systems using the shallow water equations and kinematic wave equation to improve the accuracy of hurricane storm surge predictions. Included independent study of LeVeque's \textit{Numerical Methods for Conservation Laws}.
-\end{list2}
+%\textbf{The University of Texas at Austin} \hfill June 2013--July 2015\\
+%\textit{Computational Hydraulics Group}
+%\vspace{0.05in}
+%\begin{list2}
+%\item[] Used Runge-Kutta Discontinuous Galerkin methods to simulate the effects of rainfall-induced flooding through storm sewer systems using the shallow water equations and kinematic wave equation to improve the accuracy of hurricane storm surge predictions. Included independent study of LeVeque's \textit{Numerical Methods for Conservation Laws}.
+%\end{list2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\sc Publications}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textit{Journal Articles}
 \vspace{0.05in}
-\begin{list2} 
-%\item[1.] 
-\end{list2} 
-\textit{Conference Papers}
-\vspace{0.05in}
+\begin{list2}
+\item[1.] \submitted{{\bf M.B.}, Kazebek Kazhyken, Hartmut Kaiser, Craig Michoski, Clint Dawson}{Performance Comparison of HPX Versus Traditional Parallelization Strategies for the Discontinuous Galerkin Method}{J. Sci. Comput.}{2018}
+\end{list2}
+%\textit{Conference Papers}
+%\vspace{0.05in}
 
+%% Usage for \talk
+% Names, ``Title'',Conference, {Month Day, Year}.
 \textit{Presentations/Talks}
 \vspace{0.05in}
+\begin{list2}
+\item[7.] \talk{{\bf M.B.}, Kazbek Kazhyken, Hartmut Kaiser, Craig Michoski, Clint Dawson}{Task-based Parallelism for Finite-Element Models of Shallow Water Flows}{World Congress in Computational Mechanics}{July 24, 2018}
 
+\item[6.] \talk{{\bf M.B.}}{Computational Modeling of Hurricane Storm Surge}{Harrington Annual Research Symposium}{April 10, 2018}
+
+\item[5.] \talk{{\bf M.B.}, Zach Byerly, Hartmut Kaiser, Craig Michoski, Clint Dawson}{Performance Comparison of HPX versus Traditional Parallelization Models for Finite-Element Models of Environmental Flows}{American Meteorological Society Annual Meeting}{January 10, 2018}
+
+\item[4.] \talk{{\bf M.B.}}{Wrangling Concurrency with HPX}{ICES Seminar--Student Forum}{December 8, 2017}
+
+\item[3.] \talk{{\bf M.B.}, Craig Michoski, Zach Byerly, Hartmut Kaiser, Clint Dawson}{Optimizing Discontinuous Galerkin Finite Element Kernels on Knights Landing Chips}{Texas Applied Mathematics and Engineering Symposium}{September 22, 2017}
+
+\item[2.] \talk{{\bf M.B.}, John Bachan, Cy Chan}{Asynchronous Load Balancing for Hurricane Storm Surge Simulations}{LBL Computing Sciences Seminar}{February 16, 2017}
+
+\item[1.] \talk{{\bf M.B.}, Clint Dawson, Zach Byerly, Hartmut Kaiser, Craig Michoski, Andreas Sch\"afer}{Application of High Performance ParallelX (HPX) for High Performance Computing of Hurricane Storm Surge}{American Meteorological Society Annual Meeting}{January 25, 2017}
+\end{list2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\sc Honors and \\ Awards}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textit{Honors and Awards} 
+\textit{Honors and Awards}
 \vspace{0.05in}
 \begin{list2}
 \item[] Department of Energy Computational Science Graduate Fellowship (2015)
-\item[] Harrington Fellowship (2015)
-\item[] Top Scholar-/Leader Award (2014)
+\item[] Donald D. Harrington Fellowship (2015)
+\item[] Cockrell School of Engineering Outstanding Scholar/Leader Award (2014)
 \item[] Graham F. Carey Scholarship in Computational Science (2013)
-\end{list2} 
+\end{list2}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -175,29 +198,29 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@ices.utexas.edu}
 
 \textit{Languages}
 \vspace{0.05in}
-\begin{list2} 
+\begin{list2}
 \item C++, Python, FORTRAN, MatLab, \LaTeX
 \item MPI, TensorFlow
-\end{list2} 
+\end{list2}
 %\textit{Areas of Exposure}
 %\vspace{0.05in}
-%\begin{list2} 
+%\begin{list2}
 %\item Computer Networks, Data Mining, Systems \& Hardware, Data
-% Structures. 
+% Structures.
 
 % Computational Experimentation, Systems \& Hardware
-%\end{list2} 
+%\end{list2}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{\sc Other Skills} 
+%\section{\sc Other Skills}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\textit{Languages} 
+%\textit{Languages}
 %\vspace{0.05in}
-%\begin{list2} 
+%\begin{list2}
 %\item English, German
-%\end{list2} 
+%\end{list2}
 %\section{\sc *References upon} {\sc request}
-\end{resume} 
-\end{document} 
+\end{resume}
+\end{document}
