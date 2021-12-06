@@ -39,7 +39,7 @@
 \newcommand{\article}[5]{%
 #1, ``#2'', {\it #3}, #4, #5.%
 }
-
+% Names, ``Title'', Submitted to Journal, axiv.
 \newcommand{\submitted}[4]{%
 #1, ``#2'', {\it Submitted to #3}, #4.%
 }
@@ -71,8 +71,8 @@
 \section{\sc Contact Information} 
 %vspace{.05in}
 \begin{tabular}{@{}p{3.25in}p{4in}}
-201 East 24th St, Stop C0200 & { Cell:} (214) 862-7370 \\
-Austin, TX 78712-1229 USA & {E-mail:} {\tt max@oden.utexas.edu}
+1177 Noel Dr & { Cell:} (214) 862-7370 \\
+Menlo Park, CA 94025 USA & {E-mail:} {\tt mb2010@lbl.gov}
 \end{tabular} 
 
 
@@ -85,11 +85,10 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@oden.utexas.edu}
 \vspace*{-.1in} 
 
 \begin{list1} 
-\item[] Ph.D. Candidate, Computational Science, Engineering, and Mathematics.
+\item[] Ph.D. Computational Science, Engineering, and Mathematics. August 2020.
 \item[] M.Sc., Computational Science, Engineering, and Mathematics, May 2018.
 \item[] Thesis: Task-Based Parallelism for Hurricane Storm Surge
 \item[] Advisor: Clint Dawson
-\item[] Expected Graduation Date: Summer 2020
 \end{list1}
 
 \textbf{University of Cambridge}, \\
@@ -126,7 +125,15 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@oden.utexas.edu}
 %	(Principal Investigators: Cy Chan, John Bachan).
 %\end{list2}
 
-\textbf{The University of Texas at Austin} \hfill Fall 2015--present\\
+\textbf{Lawrence Berkeley National Lab} \hfill Fall 2020--present\\
+\textit{Computer Architecture Group} \hfill {\it Supervised by:} Cy Chan and John Shalf\\
+\vspace{-0.1in}
+%\begin{list2}
+%\item Designed timestepping strategies that adaptively refine and coarsen timesteps to ensure that cells optimally satisfy the CFL condition.
+%\item Leveraged existing speculative parallel discrete event simulation techniques to efficiently parallelize the code.
+%\end{list2}
+
+\textbf{The University of Texas at Austin} \hfill Fall 2015--Fall 2020\\
 \textit{Computational Hydraulics Group}
 \hfill {\it Supervised by:} Clint Dawson\\
 \vspace{-0.1in}
@@ -172,7 +179,7 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@oden.utexas.edu}
 %\begin{list2}
 %\item[] Used Runge-Kutta Discontinuous Galerkin methods to simulate the effects of rainfall-induced flooding through storm sewer systems using the shallow water equations and kinematic wave equation to improve the accuracy of hurricane storm surge predictions. Included independent study of LeVeque's \textit{Numerical Methods for Conservation Laws}.
 %\end{list2}
-
+\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\sc Publications}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,14 +187,18 @@ Austin, TX 78712-1229 USA & {E-mail:} {\tt max@oden.utexas.edu}
 \vspace{0.05in}
 \begin{list2}
 % Names, ``Title'', Journal, Month Year, doi.
-\item[2.] \article{{\bf M.B.}, John Bachan, Cy Chan, Clint Dawson}{Adaptive Total Variation Stable Local Timestepping for Conservation Laws}{Submitted to SIAM Journal on Scientific Computing}{2020}{\newline \href{https://arxiv.org/abs/2003.09020}{arXiv:2003.09020 [math.NA]}}
+\item[4.] \submitted{{\bf M.B.}, John Bachan, Cy Chan, Clint Dawson}{Performance Analysis of Speculative Parallel Adaptive Local Timestepping for Conservation Laws}{ACM Transactions on Modeling and Computer Simulation}{2021}
+\item[3.] \submitted{Chao Zhang, {\bf M.B.}, Cy Chan, John Shalf, Xiaochen Guo}{ASA: \underline{A}ccelerating \underline{S}parse \underline{A}ccumulation in Column-wise SpGEMM}{ACM Transactions on Architecture and Code Optimization}{2021}
+\item[2.] \article{{\bf M.B.}, John Bachan, Cy Chan, Clint Dawson}{Adaptive Total Variation Stable Local Timestepping for Conservation Laws}{Submitted to Journal of Computational Physics}{2020}{\newline \href{https://arxiv.org/abs/2003.09020}{arXiv:2003.09020 [math.NA]}}
 \item[1.] \article{{\bf M.B.}, Kazbek Kazhyken, Hartmut Kaiser, Craig Michoski, Clint Dawson}{Performance Comparison of HPX Versus Traditional Parallelization Strategies for the Discontinuous Galerkin Method}{J. Sci. Comput.}{May 2019}{doi:10.1007/s10915-019-00960-z}
 \end{list2}
 %\clearpage
 \textit{Conference Papers}
 \vspace{0.05in}
 \begin{list2}
-\item[1.] \inproceeding{{\bf M.B.}, John Bachan, Cy Chan}{Semi-Static and Dynamic Load Balancing for Asynchronous Hurricane Storm Surge Simulations}{2018 IEEE/ACM Parallel Applications Workshop, Alternatives To MPI (PAW-ATM)}{Dallas, Texas}{IEEE}{November 16, 2018}{13}
+\item[3.] \inproceeding{Md Abdul Motaleb Faysal, Shaikh M. Arifuzzaman, Cy Chan, {\bf M.B.}, Doru Popovici, John Shalf}{{HyPC-Map}: {A} Hybrid Parallel Community Detection Algorithm Using Information-Theoretic Approach}{IEEE High Performance Extreme Computing Conference (HPEC ‘21)}{Boston, MA}{IEEE}{September 21, 2021}{8}
+\item[2.] \inproceeding{{\bf M.B.}, John Bachan, Cy Chan, Clint Dawson}{Speculative Parallel Execution for Local Timestepping}{2021 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (SIGSIM-PADS'21)}{Virtual Event USA}{ACM}{June 1, 2021}{11}
+\item[1.] \inproceeding{{\bf M.B.}, John Bachan, Cy Chan}{Semi-Static and Dynamic Load Balancing for Asynchronous Hurricane Storm Surge Simulations}{2018 IEEE/ACM Parallel Applications Workshop, Alternatives To MPI (PAW-ATM)}{Dallas, TX}{IEEE}{November 16, 2018}{13}
 \end{list2}
 
 %% Usage for \talk
